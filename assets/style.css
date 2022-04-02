@@ -61,14 +61,13 @@ body.container {
 }
 
 .btn {
-  border: none;
-  outline: 2px solid var(--secondary-color);
+  border: 2px solid var(--secondary-color);
   background: transparent;
   color: var(--primary-color);
   font-size: 0.9rem;
   font-weight: 700;
   border-radius: 5px;
-  padding: 0.7rem 1rem;
+  padding: 0.65rem 1rem;
   margin: 0 0.5rem 0 0;
   cursor: pointer;
 }
