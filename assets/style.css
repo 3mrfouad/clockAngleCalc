@@ -40,7 +40,6 @@ body.container {
   display: flex;
   align-items: flex-start;
   width: 100%;
-  margin-top: 1rem;
 }
 
 .form-control {
@@ -61,6 +60,7 @@ body.container {
 }
 
 .btn {
+  align-self: flex-end;
   border: 2px solid var(--secondary-color);
   background: transparent;
   color: var(--primary-color);
@@ -68,7 +68,7 @@ body.container {
   font-weight: 700;
   border-radius: 5px;
   padding: 0.65rem 1rem;
-  margin: 0 0.5rem 0 0;
+  margin: 0 0 1rem 0.5rem;
   cursor: pointer;
 }
 
