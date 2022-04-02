@@ -112,17 +112,16 @@ body.container {
   position: absolute;
   top: 50%;
   right: 50%;
+  width: 46%;
   transform-origin: right;
 }
 
 .hours {
-  width: 50%;
   border: 2px solid var(--primary-color);
   transform: rotate(90deg);
 }
 
 .minutes {
-  width: 50%;
   border: 1px solid var(--secondary-color);
   transform: rotate(90deg);
   z-index: 3;
