@@ -6,4 +6,4 @@
 - Enter the hours and minutes and hit `Go`, or
 - Use the input field dials to increment and decrement the values.
 
-This app is live on gh pages [here](https://3mrfouad.github.io/clockAngleApp/)
+This app is live on gh pages [here](https://3mrfouad.github.io/clockAngleCalc/)
