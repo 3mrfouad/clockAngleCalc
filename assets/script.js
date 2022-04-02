@@ -5,6 +5,14 @@ const angle = document.querySelector('#angle')
 const hrsArm = document.querySelector('#hrs-arm')
 const minsArm = document.querySelector('#mins-arm')
 
+const initClockFace = () => {
+  const currentTime = new Date()
+  const currentHour = currentTime.toLocaleTimeString().split(':')[0]
+  const currentMinute = currentTime.toLocaleTimeString().split(':')[1]
+  setClockArms(currentHour, currentMinute)
+  setAngleValue(currentHour, currentMinute)
+}
+
 const getClockArmAngles = (hrs, mins) => {
   const hrsAngle = (hrs % 12) * 30 + mins / 2
   const minsAngle = mins * 6
@@ -22,6 +30,10 @@ const setClockArms = (hrs, mins) => {
   minsArm.style.transform = `rotate(${minsAngle + 90}deg)`
 }
 
+const setAngleValue = (hrs, mins) => {
+  angle.value = `${calculateClockAngle(hrs, mins)}°`
+}
+
 const handleChange = (hrs, mins, angle) => {
   const hours = parseInt(hrs.value, 10)
   const minutes = parseInt(mins.value, 10)
@@ -30,7 +42,7 @@ const handleChange = (hrs, mins, angle) => {
     angle.value = 'Invalid'
     return
   }
-  angle.value = `${calculateClockAngle(hours, minutes)}°`
+  setAngleValue(hours, minutes)
   setClockArms(hours, minutes)
 }
 
@@ -58,3 +70,5 @@ mins.addEventListener('change', () => {
   handleChange(hrs, mins, angle)
   resetMinsArm(mins)
 })
+
+window.addEventListener('load', initClockFace)
