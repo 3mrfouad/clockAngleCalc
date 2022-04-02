@@ -7,10 +7,10 @@
   padding: 0;
   font-family: 'Roboto Mono', monospace;
   font-weight: 600;
-  background-color: rgb(55, 45, 45);
+  background-color: #0e185f;
   --primary-color: #28ffbf;
-  --secondary-color: #ae00fb;
-  --light-bg-color: #7842a151;
+  --secondary-color: #30aadd;
+  --light-bg-color: #24788151;
 }
 
 h2 {
