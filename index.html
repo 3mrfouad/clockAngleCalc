@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./assets/style.css">
+	<script src="./assets/script.js" defer></script>
+	<title>Clock Angle</title>
+</head>
+
+<body class="container">
+	<div class='container'>
+		<h2>Clock Angle Calculator</h2>
+		<div class='clock-face'>
+			<div class='center-hours'></div>
+			<div class='center-minutes'></div>
+			<hr id='hrs-arm' class='hours'>
+			<hr id='mins-arm' class='minutes'>
+			<div class='twelve'>12</div>
+			<div class='three'>3</div>
+			<div class='six'>6</div>
+			<div class='nine'>9</div>
+		</div>
+		<div class='inputs-container'>
+			<div>
+				<label class='form-label'>Hour(s)</label>
+				<input id='hrs' class='form-control' type='number' value=0 min=0 max=24>
+			</div>
+
+			<div>
+				<label class='form-label'>Minute(s)</label>
+				<input id='mins' class='form-control' type='number' value=0 min=0 max=60>
+			</div>
+
+			<div class='result-container'>
+				<button id='calc-btn' class='btn'>Go</button>
+				<input id='angle' value='0°' class='form-control' disabled>
+
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<span> Amr Fouad _</span>
+		<a href="https://github.com/3mrfouad" target="_blank"><img class='gh-icon' src="./images//github-svgrepo-com.svg"
+				alt=""></a>
+		<span>_[Mar 2022]</span>
+	</footer>
+</body>
+
+</html>
