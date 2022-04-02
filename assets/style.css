@@ -38,7 +38,7 @@ body.container {
 
 .result-container {
   display: flex;
-  align-items: flex-start;
+  align-items: flex-end;
   width: 100%;
 }
 
@@ -60,7 +60,6 @@ body.container {
 }
 
 .btn {
-  align-self: flex-end;
   border: 2px solid var(--secondary-color);
   background: transparent;
   color: var(--primary-color);
