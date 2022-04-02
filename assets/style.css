@@ -87,7 +87,6 @@ body.container {
   width: 200px;
   height: 200px;
   margin: 3rem;
-  outline: 1px solid var(--secondary-color);
   border-radius: 50%;
   background-color: var(--light-bg-color);
 }
