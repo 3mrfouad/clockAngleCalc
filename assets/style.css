@@ -10,19 +10,17 @@
   --fg-clr: #f9b208;
   --bg-clr: #005792;
   --blk-clr: #000;
+  --wht-clr: #fff;
   background-color: var(--bg-clr);
-}
-
-h2 {
-  margin-top: 1rem;
   color: var(--fg-clr);
+  border-color: var(--fg-clr);
 }
 
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 2px solid var(--fg-clr);
+  border: 2px solid;
   border-radius: 1rem;
   padding: 1.52rem;
 }
@@ -47,26 +45,23 @@ body.container {
   margin-bottom: 1rem;
   padding: 0.5rem 1rem;
   font-size: 1.1rem;
-  border: 2px solid var(--fg-clr);
+  border: 2px solid;
   border-radius: 5px;
   text-align: center;
-  color: var(--fg-clr);
 }
 
 .form-label {
   display: block;
   margin-bottom: 0.5rem;
-  color: var(--fg-clr);
 }
 
 .btn {
-  border: 2px solid var(--fg-clr);
+  border: 2px solid;
   background: transparent;
-  color: var(--fg-clr);
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 700;
   border-radius: 5px;
-  padding: 0.65rem 1rem;
+  padding: 0.6rem 1rem;
   margin: 0 0 1rem 0.5rem;
   cursor: pointer;
 }
@@ -77,7 +72,7 @@ body.container {
 
 .btn:active {
   background: var(--fg-clr);
-  color: #fff;
+  color: var(--wht-clr);
 }
 
 .clock-face {
@@ -86,7 +81,6 @@ body.container {
   height: 200px;
   margin: 3rem;
   border-radius: 50%;
-  background-color: var(--fg-clr);
 }
 
 .center-hours,
@@ -105,6 +99,7 @@ body.container {
 .center-hours {
   width: 1.2rem;
   height: 1.2rem;
+  outline: 1px solid var(--fg-clr);
   background-color: var(--bg-clr);
 }
 
@@ -114,7 +109,7 @@ body.container {
   top: 50%;
   right: 50%;
   width: 45%;
-  border: 2px solid var(--bg-clr);
+  border: 2px solid var(--fg-clr);
   transform: rotate(90deg);
   transform-origin: right;
 }
@@ -130,7 +125,6 @@ body.container {
 
 footer {
   text-align: center;
-  color: var(--fg-clr);
   margin-top: 3rem;
 }
 
