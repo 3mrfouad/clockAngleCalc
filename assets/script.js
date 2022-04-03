@@ -9,6 +9,8 @@ const initClockFace = () => {
   const currentTime = new Date()
   const currentHour = currentTime.toLocaleTimeString().split(':')[0]
   const currentMinute = currentTime.toLocaleTimeString().split(':')[1]
+  hrs.value = currentHour
+  mins.value = currentMinute
   setClockArms(currentHour, currentMinute)
   setAngleValue(currentHour, currentMinute)
 }
