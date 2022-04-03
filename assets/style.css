@@ -103,7 +103,6 @@ body.container {
   transform: translate(-50%, -50%);
   background-color: var(--fg-clr);
   border-radius: 50%;
-  z-index: 4;
 }
 
 .center-hours {
@@ -136,13 +135,11 @@ body.container {
 
 .minutes {
   width: 40%;
-  z-index: 3;
 }
 
 .secs {
   width: 45%;
   border: 1px solid var(--bg-clr);
-  z-index: 4;
 }
 
 footer {
