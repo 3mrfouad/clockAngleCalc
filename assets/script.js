@@ -4,12 +4,12 @@ const calcBtn = document.querySelector('#calc-btn')
 const angle = document.querySelector('#angle')
 const hrsArm = document.querySelector('#hrs-arm')
 const minsArm = document.querySelector('#mins-arm')
+const secsArm = document.querySelector('#secs-arm')
 
 const initClockFace = () => {
   const currentTime = new Date()
-  const currentHour = currentTime.toTimeString().split(':')[0]
-  const currentMinute = currentTime.toTimeString().split(':')[1]
-  console.log(currentTime.toTimeString(), currentHour, currentMinute)
+  const currentHour = currentTime.getHours()
+  const currentMinute = currentTime.getMinutes()
   hrs.value = currentHour
   mins.value = currentMinute
   setClockArms(currentHour, currentMinute)
@@ -20,6 +20,13 @@ const getClockArmAngles = (hrs, mins) => {
   const hrsAngle = (hrs % 12) * 30 + mins / 2
   const minsAngle = mins * 6
   return { hrsAngle, minsAngle }
+}
+
+const updateSecsArm = () => {
+  const currentTime = new Date()
+  const secs = currentTime.getSeconds()
+  const secsAngle = secs * 6
+  secsArm.style.transform = `rotate(${secsAngle + 90}deg)`
 }
 
 const calculateClockAngle = (hrs, mins) => {
@@ -75,3 +82,7 @@ mins.addEventListener('change', () => {
 })
 
 window.addEventListener('load', initClockFace)
+
+setInterval(updateSecsArm, 1000)
+
+setInterval(initClockFace, 60 * 1000)
