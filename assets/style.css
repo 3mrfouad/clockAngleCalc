@@ -9,9 +9,8 @@
   font-weight: 600;
   --fg-clr: #f9b208;
   --bg-clr: #005792;
-  --light-bg-clr: #f1f4df;
+  --light-bg-clr: #f5f0e3;
   --blk-clr: #000;
-  --wht-clr: #fff;
   background-color: var(--bg-clr);
   color: var(--fg-clr);
   border-color: var(--fg-clr);
@@ -24,6 +23,15 @@
   border: 2px solid;
   border-radius: 1rem;
   padding: 1.52rem;
+}
+
+div.container,
+.form-control,
+.btn {
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+h2 {
+  text-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 }
 
 body.container {
@@ -49,6 +57,7 @@ body.container {
   border: 2px solid;
   border-radius: 5px;
   text-align: center;
+  background-color: var(--light-bg-clr);
 }
 
 .form-label {
@@ -67,13 +76,10 @@ body.container {
   cursor: pointer;
 }
 
-.theme {
-  width: 100px;
-}
-
 .btn:active {
   background: var(--fg-clr);
-  color: var(--wht-clr);
+  color: var(--light-bg-clr);
+  transform: scale(0.9);
 }
 
 .clock-face {
