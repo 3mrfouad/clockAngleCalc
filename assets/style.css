@@ -106,7 +106,7 @@ body.container {
 .center-hours {
   width: 1.2rem;
   height: 1.2rem;
-  outline: 1px solid var(--fg-clr);
+  border: 1px solid var(--fg-clr);
   background-color: var(--light-bg-clr);
 }
 
