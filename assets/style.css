@@ -9,6 +9,7 @@
   font-weight: 600;
   --fg-clr: #f9b208;
   --bg-clr: #005792;
+  --light-bg-clr: #f1f4df;
   --blk-clr: #000;
   --wht-clr: #fff;
   background-color: var(--bg-clr);
@@ -100,7 +101,7 @@ body.container {
   width: 1.2rem;
   height: 1.2rem;
   outline: 1px solid var(--fg-clr);
-  background-color: var(--bg-clr);
+  background-color: var(--light-bg-clr);
 }
 
 .hours,
