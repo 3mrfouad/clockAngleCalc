@@ -7,8 +7,9 @@ const minsArm = document.querySelector('#mins-arm')
 
 const initClockFace = () => {
   const currentTime = new Date()
-  const currentHour = currentTime.toLocaleTimeString().split(':')[0]
-  const currentMinute = currentTime.toLocaleTimeString().split(':')[1]
+  const currentHour = currentTime.toTimeString().split(':')[0]
+  const currentMinute = currentTime.toTimeString().split(':')[1]
+  console.log(currentTime.toTimeString(), currentHour, currentMinute)
   hrs.value = currentHour
   mins.value = currentMinute
   setClockArms(currentHour, currentMinute)
